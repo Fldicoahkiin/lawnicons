@@ -1,50 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg [
-	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
-	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
-	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
-	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
-	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
-	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
-	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
-	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
-]>
-<svg version="1.2" baseProfile="tiny"
-	 id="vector" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:ns="http://ns.adobe.com/SaveForWeb/1.0/" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns0="&ns_sfw;" xmlns:svg="http://www.w3.org/2000/svg"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 192 192"
-	 overflow="visible" xml:space="preserve">
-<metadata  id="metadata4">
-	<ns:sfw>
-		<ns:slices></ns:slices>
-		<ns:sliceSourceBounds  bottomLeftOrigin="true" height="154.265973" width="201.0000057" x="19.2936205" y="43.2372157">
-			</ns:sliceSourceBounds>
-	</ns:sfw>
-	<ns:sfw>
-		<ns:slices></ns:slices>
-		<ns:sliceSourceBounds  bottomLeftOrigin="true" height="154.3" width="201" x="19.3" y="43.2"></ns:sliceSourceBounds>
-	</ns:sfw>
-	<ns0:sfw>
-		<ns0:slices></ns0:slices>
-		<ns0:sliceSourceBounds  bottomLeftOrigin="true" height="165.3" width="212" x="13.8" y="37.7"></ns0:sliceSourceBounds>
-	</ns0:sfw>
-	<ns0:sfw>
-		<ns0:slices></ns0:slices>
-		<ns0:sliceSourceBounds  bottomLeftOrigin="true" height="125.6" width="160.2" x="15.9" y="33.2"></ns0:sliceSourceBounds>
-	</ns0:sfw>
-	<sfw  xmlns="&ns_sfw;">
-		<slices></slices>
-		<sliceSourceBounds  bottomLeftOrigin="true" height="125.567" width="160.3" x="15.9" y="33.2"></sliceSourceBounds>
-	</sfw>
-</metadata>
-<sodipodi:namedview  bordercolor="#000000" borderopacity="0.25" id="namedview7" inkscape:current-layer="vector" inkscape:cx="-13.706213" inkscape:cy="67.801149" inkscape:deskcolor="#d1d1d1" inkscape:pagecheckerboard="0" inkscape:pageopacity="0.0" inkscape:showpageshadow="2" inkscape:window-height="1017" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:zoom="6.1650872" pagecolor="#ffffff" showgrid="false">
-	</sodipodi:namedview>
-<path id="path11" sodipodi:nodetypes="cscccccccccccssscccccscccssc" fill="none" stroke="#000000" stroke-width="12" stroke-linecap="round" d="
-	M50.25,74.8H47.6v54.3 M128.2,81.1c0.2-2.1,2.8-5.4,4.4-5.6 M144.1,84.3c0.1-3.2,0.1-6.4,0.1-9.6h-31.8c0,3.2-0.1,6.2,0,9.1
-	 M128.2,74.7v55.1 M95.7,152.8H30.1c-5.7,0-8.2-2.6-8.2-8.3V47.7c0-5.9,2.3-8.2,8.2-8.2c16-0.1,32-0.4,48-0.2c2.3,0,4.9,1.4,6.7,2.9
-	c3.2,2.5,6,5.6,8.8,8.6c1.7,1.8,3.6,2.4,6,2.4C118.4,53,137.2,53,156,53h5.3c5.9,0.1,8.8,3,8.9,9v60.7v21.6c0,5.9-2.7,8.5-8.4,8.5
-	L95.7,152.8z"/>
-<polyline fill="none" stroke="#000000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" points="77.35,74.8 
-	73,74.8 63.8,96.016 54.6,74.8 50.25,74.8 "/>
-<polyline fill="none" stroke="#000000" stroke-width="12" stroke-linecap="round" points="80,129.1 80,74.8 77.35,74.8 "/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="vector" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <defs>
+    <style>
+      .b {
+        stroke-linejoin: round;
+      }
+
+      .b, .c {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <polyline class="b" image-rendering="auto" points="75.84192 73.08496 71.13992 73.08496 61.19545 96.01777 51.25098 73.08496 46.54898 73.08496"/>
+  <path class="c" d="M46.58789,73.10982h-2.85904v58.58372m104.11316-48.33336c.10809-3.45246,.10809-6.90492,.10809-10.35738h-34.30842c0,3.45246-.10809,6.68874,0,9.818m17.04612-9.818v59.44737m-35.06397,24.81361H24.84734c-6.14936,0-8.84733-2.80499-8.84733-8.95435V43.87199c0-6.36554,2.48179-8.84734,8.84733-8.84734,17.2623-.10809,34.5246-.43129,51.7869-.21618,2.4818,0,5.28678,1.51004,7.22812,3.12926,3.45246,2.6969,6.47363,6.04235,9.4948,9.27862,1.83432,1.94241,3.88375,2.58989,6.47363,2.58989,20.28347-.21618,40.56693-.21618,60.84933-.21618h5.71806c6.36554,.10809,9.49481,3.23627,9.60182,9.70991v88.79329c0,6.36554-2.91309,9.17053-9.06244,9.17053H95.62383Zm-16.9175-25.48486v-58.69398h-2.86443"/>
 </svg>
