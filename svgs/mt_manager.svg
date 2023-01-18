@@ -1,64 +1,50 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 27.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-
-<svg
-   version="1.1"
-   id="vector"
-   x="0px"
-   y="0px"
-   viewBox="0 0 192 192"
-   xml:space="preserve"
-   width="192"
-   height="192"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:ns="http://ns.adobe.com/SaveForWeb/1.0/"
-   xmlns:ns0="&amp;ns_sfw;"><defs
-   id="defs14" />
-<style
-   type="text/css"
-   id="style2">
-	.st0{fill:none;stroke:#000000;stroke-width:12;}
-	.st1{fill:none;stroke:#000000;stroke-width:12;stroke-linecap:round;}
-</style>
-<metadata
-   id="metadata4">
+<!DOCTYPE svg [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.2" baseProfile="tiny"
+	 id="vector" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:ns="http://ns.adobe.com/SaveForWeb/1.0/" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns0="&ns_sfw;" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 192 192"
+	 overflow="visible" xml:space="preserve">
+<metadata  id="metadata4">
 	<ns:sfw>
-		<ns:slices />
-		<ns:sliceSourceBounds
-   bottomLeftOrigin="true"
-   height="154.265973"
-   width="201.0000057"
-   x="19.2936205"
-   y="43.2372157">
+		<ns:slices></ns:slices>
+		<ns:sliceSourceBounds  bottomLeftOrigin="true" height="154.265973" width="201.0000057" x="19.2936205" y="43.2372157">
 			</ns:sliceSourceBounds>
 	</ns:sfw>
 	<ns:sfw>
-		<ns:slices />
-		<ns:sliceSourceBounds
-   bottomLeftOrigin="true"
-   height="154.3"
-   width="201"
-   x="19.3"
-   y="43.2" />
+		<ns:slices></ns:slices>
+		<ns:sliceSourceBounds  bottomLeftOrigin="true" height="154.3" width="201" x="19.3" y="43.2"></ns:sliceSourceBounds>
 	</ns:sfw>
 	<ns0:sfw>
-		<ns0:slices />
-		<ns0:sliceSourceBounds
-   bottomLeftOrigin="true"
-   height="165.3"
-   width="212"
-   x="13.8"
-   y="37.7" />
+		<ns0:slices></ns0:slices>
+		<ns0:sliceSourceBounds  bottomLeftOrigin="true" height="165.3" width="212" x="13.8" y="37.7"></ns0:sliceSourceBounds>
 	</ns0:sfw>
+	<ns0:sfw>
+		<ns0:slices></ns0:slices>
+		<ns0:sliceSourceBounds  bottomLeftOrigin="true" height="125.6" width="160.2" x="15.9" y="33.2"></ns0:sliceSourceBounds>
+	</ns0:sfw>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="125.567" width="160.3" x="15.9" y="33.2"></sliceSourceBounds>
+	</sfw>
 </metadata>
-
-
-
-
-
-<path
-   id="path11"
-   class="st1"
-   d="M 79.473831,129.22503 V 76.385751 c 0,-0.370543 -0.07411,-0.815193 -0.148216,-1.556277 -1.85271,0 1.037517,0.148217 -0.592868,0 -2.075034,-0.222325 -3.334877,0.518759 -4.446503,2.29736 -3.557202,5.03937 -6.892079,10.375173 -10.52339,15.414544 m 0,0 -9.856415,-15.859195 c -0.518758,-0.741083 -1.408059,-1.704492 -2.223251,-1.7786 -2.890227,-0.222325 -0.963409,-0.07411 -4.15007,-0.07411 V 129.15092 M 128.38536,80.239386 c 0.22233,-2.075035 2.81613,-5.409912 4.4465,-5.632237 m 11.26448,9.708198 c 0.14822,-3.186661 0.0741,-6.447429 0.0741,-9.634089 h -31.79248 c 0,3.18666 -0.0741,6.150995 0,9.11533 m 15.85919,-9.11533 V 129.74379 M 95.703567,152.7915 H 30.117648 c -5.706344,0 -8.22603,-2.5938 -8.22603,-8.30014 V 47.705806 c 0,-5.92867 2.297361,-8.22603 8.151923,-8.22603 16.007409,-0.148216 32.01482,-0.370542 48.022231,-0.222325 2.29736,0 4.891153,1.408059 6.743863,2.890227 3.186661,2.519685 6.00278,5.632237 8.818899,8.596572 1.704492,1.778601 3.557201,2.445576 6.002778,2.445576 C 118.38073,53.04161 137.20426,53.04161 155.95368,53.04161 h 5.26169 c 5.92868,0.07411 8.81891,2.964335 8.89301,8.967114 v 60.694766 21.56554 c 0,5.85457 -2.6679,8.52247 -8.44836,8.52247 z" />
+<sodipodi:namedview  bordercolor="#000000" borderopacity="0.25" id="namedview7" inkscape:current-layer="vector" inkscape:cx="-13.706213" inkscape:cy="67.801149" inkscape:deskcolor="#d1d1d1" inkscape:pagecheckerboard="0" inkscape:pageopacity="0.0" inkscape:showpageshadow="2" inkscape:window-height="1017" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:zoom="6.1650872" pagecolor="#ffffff" showgrid="false">
+	</sodipodi:namedview>
+<path id="path11" sodipodi:nodetypes="cscccccccccccssscccccscccssc" fill="none" stroke="#000000" stroke-width="12" stroke-linecap="round" d="
+	M50.25,74.8H47.6v54.3 M128.2,81.1c0.2-2.1,2.8-5.4,4.4-5.6 M144.1,84.3c0.1-3.2,0.1-6.4,0.1-9.6h-31.8c0,3.2-0.1,6.2,0,9.1
+	 M128.2,74.7v55.1 M95.7,152.8H30.1c-5.7,0-8.2-2.6-8.2-8.3V47.7c0-5.9,2.3-8.2,8.2-8.2c16-0.1,32-0.4,48-0.2c2.3,0,4.9,1.4,6.7,2.9
+	c3.2,2.5,6,5.6,8.8,8.6c1.7,1.8,3.6,2.4,6,2.4C118.4,53,137.2,53,156,53h5.3c5.9,0.1,8.8,3,8.9,9v60.7v21.6c0,5.9-2.7,8.5-8.4,8.5
+	L95.7,152.8z"/>
+<polyline fill="none" stroke="#000000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" points="77.35,74.8 
+	73,74.8 63.8,96.016 54.6,74.8 50.25,74.8 "/>
+<polyline fill="none" stroke="#000000" stroke-width="12" stroke-linecap="round" points="80,129.1 80,74.8 77.35,74.8 "/>
 </svg>

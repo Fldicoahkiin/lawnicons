@@ -801,8 +801,8 @@
     <icon drawable="@drawable/moon_reader" package="com.flyersoft.moonreader" name="Moon+ Reader" />
     <icon drawable="@drawable/morse" package="rocks.poopjournal.morse" name="Morse" />
     <icon drawable="@drawable/mozilla_vpn" package="org.mozilla.firefox.vpn" name="Mozilla VPN" />
-    <icon drawable="@drawable/mt_manager" package="bin.mt.plus" name="MT Manager" />
     <icon drawable="@drawable/mt_manager" package="bin.mt.plus.canary" name="MT Manager" />
+    <icon drawable="@drawable/mt_manager" package="bin.mt.plus" name="MT Manager" />
     <icon drawable="@drawable/mull" package="us.spotco.fennec_dos" name="Mull" />
     <icon drawable="@drawable/mullvad_vpn" package="net.mullvad.mullvadvpn" name="Mullvad VPN" />
     <icon drawable="@drawable/movie_lab" package="com.movielab.mobile" name="MovieLab" />
