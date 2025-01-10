@@ -1,67 +1,72 @@
 package app.lawnchair.lawnicons.ui.destination
 
 import androidx.compose.animation.Crossfade
-import androidx.compose.foundation.layout.WindowInsets
-import androidx.compose.foundation.layout.navigationBars
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.calculateEndPadding
+import androidx.compose.foundation.layout.calculateStartPadding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.rounded.ArrowBack
-import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.input.nestedscroll.nestedScroll
+import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.navigation.NavController
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.navigation.NavGraphBuilder
+import androidx.navigation.compose.composable
 import app.lawnchair.lawnicons.R
-import app.lawnchair.lawnicons.ui.component.ClickableIcon
-import app.lawnchair.lawnicons.ui.component.SimpleListRow
-import app.lawnchair.lawnicons.ui.component.TopBarWithInsets
-import app.lawnchair.lawnicons.ui.util.Destinations
-import app.lawnchair.lawnicons.ui.util.toPaddingValues
-import app.lawnchair.lawnicons.viewmodel.AcknowledgementsViewModel
+import app.lawnchair.lawnicons.ui.components.core.LawniconsScaffold
+import app.lawnchair.lawnicons.ui.components.core.SimpleListRow
+import app.lawnchair.lawnicons.viewmodel.AcknowledgementViewModel
+import kotlinx.serialization.Serializable
+
+@Serializable
+data object Acknowledgements
+
+fun NavGraphBuilder.acknowledgementsDestination(
+    isExpandedScreen: Boolean,
+    onBack: () -> Unit,
+    onNavigate: (String) -> Unit,
+) {
+    composable<Acknowledgements> {
+        Acknowledgements(
+            onBack = onBack,
+            onNavigate = onNavigate,
+            isExpandedScreen = isExpandedScreen,
+        )
+    }
+}
 
 @Composable
-@OptIn(ExperimentalMaterial3Api::class)
-fun Acknowledgements(
-    acknowledgementsViewModel: AcknowledgementsViewModel = hiltViewModel(),
-    navController: NavController,
+private fun Acknowledgements(
+    onBack: () -> Unit,
+    onNavigate: (String) -> Unit,
+    isExpandedScreen: Boolean,
+    modifier: Modifier = Modifier,
+    acknowledgementsViewModel: AcknowledgementViewModel = hiltViewModel(),
 ) {
-    val ossLibraries by acknowledgementsViewModel.ossLibraries.collectAsState()
-    val scrollBehavior = TopAppBarDefaults.exitUntilCollapsedScrollBehavior()
+    val ossLibraries by acknowledgementsViewModel.ossLibraries.collectAsStateWithLifecycle()
 
-    Scaffold(
-        modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
-        topBar = {
-            TopBarWithInsets(
-                scrollBehavior = scrollBehavior,
-                title = stringResource(id = R.string.acknowledgements),
-                navigationIcon = {
-                    ClickableIcon(
-                        onClick = { navController.popBackStack() },
-                        imageVector = Icons.Rounded.ArrowBack,
-                        size = 40.dp,
-                        modifier = Modifier.padding(horizontal = 4.dp),
-                    )
-                },
-            )
-        },
-    ) { innerPadding ->
+    LawniconsScaffold(
+        modifier = modifier,
+        title = stringResource(id = R.string.acknowledgements),
+        onBack = onBack,
+        isExpandedScreen = isExpandedScreen,
+    ) { paddingValues ->
         Crossfade(
             targetState = ossLibraries,
-            modifier = Modifier.padding(innerPadding),
+            label = "",
         ) { libraries ->
+            val layoutDirection = LocalLayoutDirection.current
+            val verticalListPadding = 8.dp
             LazyColumn(
-                contentPadding = WindowInsets.navigationBars.toPaddingValues(
-                    additionalTop = 8.dp,
-                    additionalBottom = 8.dp,
+                contentPadding = PaddingValues(
+                    start = paddingValues.calculateStartPadding(layoutDirection),
+                    top = paddingValues.calculateTopPadding() + verticalListPadding,
+                    end = paddingValues.calculateEndPadding(layoutDirection),
+                    bottom = paddingValues.calculateBottomPadding() + verticalListPadding,
                 ),
             ) {
                 itemsIndexed(libraries) { index, it ->
@@ -72,7 +77,7 @@ fun Acknowledgements(
                         last = index == libraries.lastIndex,
                         divider = index != libraries.lastIndex,
                         onClick = {
-                            navController.navigate("${Destinations.ACKNOWLEDGEMENT}/${it.name}")
+                            onNavigate(it.name)
                         },
                     )
                 }

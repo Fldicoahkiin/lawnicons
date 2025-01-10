@@ -3,8 +3,7 @@ package app.lawnchair.lawnicons.repository
 import android.app.Application
 import androidx.compose.ui.text.AnnotatedString
 import app.lawnchair.lawnicons.model.OssLibrary
-import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
+import app.lawnchair.lawnicons.util.kotlinxJson
 import javax.inject.Inject
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.MainScope
@@ -16,16 +15,25 @@ import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 
-class OssLibraryRepository @Inject constructor(private val application: Application) {
+interface OssLibraryRepository {
+    val ossLibraries: StateFlow<List<OssLibrary>>
+
+    fun getNoticeForOssLibrary(
+        ossLibraryName: String,
+        annotate: (String) -> AnnotatedString,
+    ): Flow<AnnotatedString?>
+}
+
+class OssLibraryRepositoryImpl @Inject constructor(private val application: Application) : OssLibraryRepository {
 
     private val coroutineScope = MainScope()
 
-    val ossLibraries: StateFlow<List<OssLibrary>> = flow {
+    override val ossLibraries: StateFlow<List<OssLibrary>> = flow {
         val jsonString = application.resources.assets.open("artifacts.json")
             .bufferedReader().use { it.readText() }
-        val listType = object : TypeToken<List<OssLibrary>>() {}.type
-        val ossLibraries = Gson().fromJson<List<OssLibrary>>(jsonString, listType)
+        val ossLibraries = kotlinxJson.decodeFromString<List<OssLibrary>>(jsonString)
             .asSequence()
+            .filter { it.name != OssLibrary.UNKNOWN_NAME }
             .distinctBy { "${it.groupId}:${it.artifactId}" }
             .sortedBy { it.name }
             .toList()
@@ -34,7 +42,7 @@ class OssLibraryRepository @Inject constructor(private val application: Applicat
         .flowOn(Dispatchers.IO)
         .stateIn(coroutineScope, SharingStarted.Lazily, emptyList())
 
-    fun getNoticeForOssLibrary(
+    override fun getNoticeForOssLibrary(
         ossLibraryName: String,
         annotate: (String) -> AnnotatedString,
     ): Flow<AnnotatedString?> = ossLibraries.map { it ->
