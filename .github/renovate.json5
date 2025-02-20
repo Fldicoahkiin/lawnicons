@@ -1,0 +1,29 @@
+{
+    labels: [
+        'dependencies',
+    ],
+    extends: [
+        'config:recommended',
+    ],
+    packageRules: [
+        {
+            groupName: 'Kotlin and KSP',
+            matchPackageNames: [
+                'com.google.devtools.ksp{/,}**',
+                '/org.jetbrains.kotlin.*/',
+            ],
+        },
+        {
+            groupName: 'AGP',
+            matchPackageNames: [
+                '/com.android.*/',
+            ],
+        },
+        {
+            groupName: 'Hilt',
+            matchPackageNames: [
+                'com.google.dagger{/,}**',
+            ],
+        },
+    ],
+}

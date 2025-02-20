@@ -2,6 +2,7 @@
 .gradle
 local.properties
 .idea
+.kotlin
 .DS_Store
 build
 captures
@@ -11,6 +12,7 @@ keystore.properties
 app/src/dark
 app/src/light
 app/src/runtime
+__pycache__/
 
 # IDEs cache directory
 .vs/
